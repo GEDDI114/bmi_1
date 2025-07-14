@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mohamed nour</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  @media (max-width: 640px) {
+    .custom-box {
+      width: 90% !important;
+    }
+  }
+
+  @media (min-width: 641px) {
+    .custom-box {
+      width: 450px !important;
+    }
+  }
+</style>
+
+</head>
+<body class="bg-green-200 min-h-screen flex justify-center items-center">
+  <div class="bg-green-400 w-[90%] sm:w-[450px] h-auto p-6 font-semibold rounded-lg shadow-lg">
+    <div class="text-center">
+      <h2 class="font-semibold text-[26px] sm:text-[30px] mb-4">Check Your BMI</h2>
+
+      <input class="bg-white p-2 rounded-lg w-full mt-3" placeholder="Enter your weight (kg)" type="number" id="weightInput"><br>
+
+      <input class="bg-white rounded-lg p-2 w-full mt-4" placeholder="Enter your height (m)" type="number" id="heightInput"><br>
+
+      <button class="bg-green-200 px-4 py-2 rounded-lg mt-5 hover:bg-green-300" onclick="calculateBMI()">Submit</button>
+
+      <div class="font-semibold text-2xl mt-4 text-gray-800" id="result"></div>
+    </div>
+  </div>
+
+  <script>
+   
+  </script>
+</body>
+</html>
